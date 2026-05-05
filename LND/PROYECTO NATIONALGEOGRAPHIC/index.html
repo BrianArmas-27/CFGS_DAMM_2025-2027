@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>National Cacagraphic</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>      
+        <div id="navBar">
+            <!--Logo (izquierda), [Ciencia, animales, medio ambiente] (centro flex), suscripcion (derecha)-->
+            <span class="logo">National CacaGraphic</span>
+            <div class="categorias">
+                <span>Ciencia</span>
+                <span>Animales</span>
+                <span>Medio Ambiente</span>
+                <span>Historia</span>
+            </div>
+            <span><button id="publicacionController">Publica tu noticia</button></span>
+        </div>
+
+        <section id="publicarNoticias">
+            <div class="publicarNoticias">
+            <h2>Publicar nueva noticia</h2>
+            <input type="text" id="inTitulo" placeholder="Título"><br><br>
+            <textarea id="inNoticia" rows="5" cols="50" placeholder="Contenido..."></textarea><br><br>
+            <label for="categoria">Categoría: </label>
+            <select id="inCategoria" name="categoria">
+                <option value="ciencia">Ciencia</option>
+                <option value="animales">Animales</option>
+                <option value="medioambiente">Medio Ambiente</option>
+            </select><br><br>
+            <button id="publicar">Publicar</button>
+            </div>
+        </section>
+
+        <div id="controllers">
+            <button id="noticiasController">Ocultar Noticias</button>
+        </div>
+        <section id="contenedorNoticias">
+            <!--Aparece y desaparece su contenido mediante js. El mundo de la informática es impresionante...-->
+            <div id="noticiasPrincipales">
+                <!--3x2. Un apartado 2x2, lo demás 1x1-->
+                <p>Noticia grande</p>
+                <p>Noticia pequeña x2</p>
+            </div>
+            <div id="noticiasVarias">
+                <!--Cuadricula-->
+                <p>Noticias por la cara</p>
+            </div>
+        </section>
+    </body>
+</html>

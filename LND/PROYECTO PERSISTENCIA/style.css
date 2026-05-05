@@ -1,0 +1,46 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.alineado-item {
+    display: flex; 
+    justify-content: space-between;
+    margin: 0.6rem 0;
+}
+
+.texto-negrita {
+    font-weight: bold;
+}
+
+.contenido-form{
+    border: solid 1px; 
+    padding: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 0.5rem;
+}
+
+li > span:first-child {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+
+.ficha-juego {
+    width: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 1rem;
+}

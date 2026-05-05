@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi lista de juegos</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>👾 Mi lista de juegos 🎮</h1>
+
+    <div class="contenido-form">
+        <form id="form">
+
+            <div class="alineado-item">
+                <span class="texto-negrita">Nombre:</span>
+                <input type="text" id="nombre" name="nombre" required/>
+            </div>
+
+            <div class="alineado-item">
+                <span class="texto-negrita">Genero:</span>
+                <select name="genero" id="genero">
+                    <option value="Acción">Acción</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Deporte">Deporte</option>
+                </select>
+            </div>
+
+            <div class="alineado-item">
+                <span class="texto-negrita">Plataforma:</span>
+
+                <input type="radio" id="pc" name="plataforma" value="pc" required>
+                <label for="pc">PC</label><br>
+
+                <input type="radio" id="xbox" name="plataforma" value="xbox">
+                <label for="xbox">Xbox</label><br>
+
+                <input type="radio" id="playstation" name="plataforma" value="playstation">
+                <label for="playstation">Playstation</label>
+            </div>
+
+            <div style="margin-top: 1rem;">
+                <input type="submit" value="Añadir a mi lista">
+            </div>
+
+        </form>
+        <span></span>
+    </div>
+
+    <div>
+        <ul id="lista-juegos">
+        </ul>
+
+    </div>
+</body>
+</html>
